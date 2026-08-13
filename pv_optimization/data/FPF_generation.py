@@ -33,11 +33,11 @@ P_in = 101325  # Pa
 # mechanism = 'C3Mech_H2_NOx'
 
 ## CH4 - H2 mixtures
-# mechanism = 'UC-SD_R26S'
+mechanism = 'UC-SD_R26S'
 # mechanism = 'C3Mech_CH4'
 
 ## CH4 - H2 - NH3 mixtures
-mechanism = 'C3Mech_CH4_NH3_NOx'
+# mechanism = 'C3Mech_CH4_NH3_NOx'
 
 # =================================================================================================
 # =================================================================================================
@@ -242,7 +242,7 @@ results_mixture_fraction_inlet.to_csv("freely-propagating-flame-"+ data_tag +"-m
 
 # Save the mixture fraction along the flame
 results_mixture_fraction_along_flame = pd.DataFrame(mixture_fraction_along_flame_all)
-results_mixture_fraction_along_flame.to_csv("freely-propagating-flame-"+ data_tag +"-fraction-along-flame.csv", index=False, header=False)
+results_mixture_fraction_along_flame.to_csv("freely-propagating-flame-"+ data_tag +"-mixture-fraction-along-flame.csv", index=False, header=False)
 
 # Save temperature and species mass fractions
 results_state_space = {"Temperature": temperature_all}
