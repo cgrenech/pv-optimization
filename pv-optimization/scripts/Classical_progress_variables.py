@@ -80,7 +80,7 @@ for index_species, species in enumerate(species_list_PM) :
 ###############################################################################################
 # Calcul of the PV_IP
 PV_IP = pd.Series(0.0, index = data_state_space.index)
-for index_species, species in enumerate(species_list_IP)
+for index_species, species in enumerate(species_list_IP):
         for index, value in enumerate(data_names):
             if species != value[0] :
                 pass
@@ -102,7 +102,7 @@ for index_species, species in enumerate(species_list_IP) :
 ###############################################################################################
 # Calcul of the PV_F
 PV_F = pd.Series(0.0, index = data_state_space.index)
-for index_species, species in enumerate(species_list_F)
+for index_species, species in enumerate(species_list_F):
         for index, value in enumerate(data_names):
             if species != value[0] :
                 pass
